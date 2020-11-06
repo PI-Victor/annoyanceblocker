@@ -1,19 +1,22 @@
 {
-
   "manifest_version": 2,
   "name": "Annoyance Blocker",
   "version": "0.1",
-
-  "description": "Lets you browse instagram and view pictures without an account",
+  "description": "Browse the web without malarkey!",
 
   "icons": {
-    "48": "icons/baseline_close_black_48dp.png"
+    "36": "icons/baseline_close_black_48dp.png"
   },
 
   "content_scripts": [
     {
       "matches": ["*://*.instagram.com/*"],
+      "css": ["hide_elements.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.instagram.com/*"],
       "js": ["annoyanceblocker.js"]
     }
-  ]
+  ]  
 }
