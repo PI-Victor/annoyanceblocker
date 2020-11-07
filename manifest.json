@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Annoyance Blocker",
-  "version": "0.1",
+  "version": "0.3",
   "description": "Browse the web without malarkey!",
 
   "icons": {
@@ -11,12 +11,12 @@
   "content_scripts": [
     {
       "matches": ["*://*.instagram.com/*"],
-      "css": ["hide_elements.css"],
+      "css": ["instagram/instagram.css"],
       "run_at": "document_start"
     },
     {
       "matches": ["*://*.instagram.com/*"],
-      "js": ["annoyanceblocker.js"]
+      "js": ["instagram/instagram.js"]
     }
   ]  
 }

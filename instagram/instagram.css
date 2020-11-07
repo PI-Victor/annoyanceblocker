@@ -1,0 +1,20 @@
+/* NOTE: These div tag might change and this might not 
+work in the long run, but injecting css at 'document_start'
+is convenient since the login pop up will not show at all.
+*/
+
+.Yx5H {
+  display: none !important;
+}
+
+.RnEpo {
+  display: none !important;
+}
+
+.tHaIX {
+  display: none !important;
+}
+
+body {
+  overflow: auto !important;
+}
